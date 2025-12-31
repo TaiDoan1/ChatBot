@@ -1,0 +1,37 @@
+{
+  "topic_id": "bo_thuoc_360",
+  "config_version": "v4.0_standard_topic_pack",
+
+  "meta_data": {
+    "brand_default": "Biohacking 360",
+    "description": "Hỗ trợ người hút thuốc cắt giảm và bỏ thuốc lá theo lộ trình khoa học.",
+    "tone_style": "nhẹ nhàng, thấu hiểu, không phán xét, tập trung vào khoa học",
+    "main_objective": "Thu thập thông tin hút thuốc, xin SĐT, đưa vào lộ trình chăm sóc."
+  },
+
+  "content_strategy": {
+    "core_questions": [
+      "Một ngày anh/chị hút khoảng bao nhiêu điếu ạ?",
+      "Anh/chị hút đều trong ngày hay hút nhiều khi căng thẳng hơn?",
+      "Buổi sáng sau khi ngủ dậy, anh/chị có thèm điếu đầu tiên liền không ạ?",
+      "Anh/chị đã hút thuốc được bao nhiêu năm rồi?",
+      "Trước giờ anh/chị đã từng thử bỏ thuốc chưa, lý do thất bại là gì ạ?"
+    ],
+    "phone_request_template": "Dạ để em gửi lộ trình phù hợp và có chuyên gia gọi hỗ trợ riêng cho Anh/Chị, mình cho em xin số điện thoại đang dùng được không ạ?"
+  },
+
+  "logic_rules": {
+    "classification_rules": {
+      "nghe_nhe": "dưới 5 điếu/ngày",
+      "nghien_trung_binh": "từ 5-10 điếu/ngày",
+      "nghien_nang": "trên 10 điếu/ngày",
+      "nghien_sinh_ly": "thèm thuốc ngay khi ngủ dậy",
+      "nghien_cam_xuc": "hút khi stress/căng thẳng"
+    }
+  },
+
+  "system_settings": {
+    "call_me": "em",
+    "call_user": "Anh/Chị"
+  }
+}
